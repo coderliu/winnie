@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every :hour do
-  rake "post:get_new_post"
+  rake "post:get_new_posts"
 end

@@ -8,6 +8,7 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 server "hentaioverflow.com", user: "coderergo", roles: %w{app db}
 set :rbenv_ruby, '2.4.1'
+set :rbenv_map_bins, %w{rake gem bundle ruby rails puma pumactl}
 
 # role-based syntax
 # ==================
