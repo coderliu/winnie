@@ -17,7 +17,7 @@ class DataSourceService
         content_reqs = Net::HTTP.get_response(URI.parse(url))
         content_doc = Nokogiri::HTML(content_reqs.body)
         content = content_doc.css('.exam_content').first.text
-        Post.create(title: title, url: url, content: content, include_english: content.include?('英语'))
+        Post.create(title: title, url: url, content: content, include_english: content.include?('英语'), district: :siming)
       end
     end
   end

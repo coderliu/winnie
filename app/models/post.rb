@@ -10,9 +10,9 @@ class Post < ApplicationRecord
 
   def send_email
     subject = "[#{district}] #{title}"
-    text = url + '\n' + content
+    text = url + "\n" + content
     RestClient.post "https://api:#{MAILGUN_API_KEY}@api.mailgun.net/v3/#{MAILGUN_DOMAIN_NAME}/messages",
-                    from: "Excited User <mailgun@#{MAILGUN_DOMAIN_NAME}>",
+                    from: "Ergo <mailgun@#{MAILGUN_DOMAIN_NAME}>",
                     to: RECIVER_ADDRESSES.to_s,
                     subject: subject,
                     text: text
