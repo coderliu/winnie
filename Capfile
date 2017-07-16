@@ -23,6 +23,7 @@ install_plugin Capistrano::Puma::Jungle # if you need the jungle tasks
 install_plugin Capistrano::Puma::Nginx  # if you want to upload a nginx site template
 
 require 'capistrano/rbenv'
+require "whenever/capistrano"
 require 'sshkit/sudo'
 
 # Include tasks from other gems included in your Gemfile
