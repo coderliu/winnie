@@ -10,6 +10,7 @@ class Post < ApplicationRecord
 
   def send_email
     subject = "[#{district}] #{title}"
+    subject = "[English]" + subject if include_english
     text = url + "\n" + content
     RestClient.post "https://api:#{MAILGUN_API_KEY}@api.mailgun.net/v3/#{MAILGUN_DOMAIN_NAME}/messages",
                     from: "Ergo <mailgun@#{MAILGUN_DOMAIN_NAME}>",
