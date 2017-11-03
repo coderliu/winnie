@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every :hour do
+every 15.minutes do
   rake "post:get_new_posts"
 end
