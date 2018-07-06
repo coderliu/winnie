@@ -6,7 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server "hentaioverflow.com", user: "coderergo", roles: %w{app db}
+server "occupytianan.men", user: "root", roles: %w{app db}
 set :rbenv_ruby, '2.5.1'
 set :rbenv_map_bins, %w{rake gem bundle ruby rails puma pumactl}
 
