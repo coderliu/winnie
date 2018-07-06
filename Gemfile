@@ -30,7 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', require: false
 
-gem 'nokogiri'
+gem 'nokogiri', '~> 1.8.1'
+gem 'loofah', '~> 2.2.1'
+gem 'rails-html-sanitizer', '~> 1.0.4'
+
 gem 'whenever'
 gem 'rest-client'
 
