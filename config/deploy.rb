@@ -3,6 +3,7 @@ lock "3.11.0"
 
 set :application, "winnie"
 set :repo_url, "git@github.com:coderliu/winnie.git"
+set :whenever_path, '/var/www/winnie/current'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

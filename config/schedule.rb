@@ -5,7 +5,9 @@
 
 # Example:
 #
-# set :output, "/path/to/my/cron_log.log"
+set :output, 'log/whenever.log'
+set :chronic_options, hours24: true
+env :PATH, ENV['PATH']
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -19,6 +21,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 15.minutes do
+every 5.minutes do
   rake "post:get_new_posts"
 end

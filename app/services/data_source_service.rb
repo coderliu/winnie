@@ -2,6 +2,7 @@ class DataSourceService
   def self.update_posts
     update_siming_posts
     Rails.logger.info "Posts updated"
+    puts 'Posts updated'
   end
 
   def self.update_siming_posts
